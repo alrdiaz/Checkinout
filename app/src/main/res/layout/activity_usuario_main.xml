@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.usuario.UsuarioMainActivity"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svMenu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SurfaceView
+                android:id="@+id/svCamara"
+                android:layout_width="360dp"
+                android:layout_height="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                app:boxBackgroundColor="@color/white"
+                android:id="@+id/NombreOperador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nombre_persona"
+                android:layout_below="@+id/svCamara"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="7dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etNombreOperador" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llFormulario"
+                android:layout_marginHorizontal="30dp"
+                android:layout_below="@+id/NombreOperador">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="@string/hint_id"
+                        android:layout_gravity="fill_horizontal"
+                        app:boxBackgroundColor="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etLecturaID"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtProyecto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/hint_proyecto"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_hora"
+                        android:layout_weight="3"
+                        android:layout_gravity="fill_horizontal"
+                        app:boxBackgroundColor="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etHora"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtTurnoTrabajo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/hint_turno_trabajo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_fecha"
+                        android:layout_weight="3"
+                        android:layout_gravity="fill_horizontal"
+                        app:boxBackgroundColor="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etFecha"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSitioTrabajo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/hint_sitio_trabajo"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_temperatura"
+                        android:layout_weight="3"
+                        android:layout_gravity="fill_horizontal"
+                        app:boxBackgroundColor="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etTemperatura"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtTipo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/hint_tipo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_observacion"
+                        android:layout_weight="3"
+                        android:layout_gravity="fill_horizontal"
+                        app:boxBackgroundColor="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etObservacion" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtFirmaEscaner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/hint_firma_escaner"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--       <GridLayout-->
+            <!--           android:id="@+id/glDatos"-->
+            <!--           android:layout_width="match_parent"-->
+            <!--           android:layout_height="wrap_content"-->
+            <!--           android:layout_below="@+id/NombreOperador"-->
+            <!--           android:columnCount="3"-->
+            <!--           android:rowCount="6"-->
+            <!--           android:layout_marginHorizontal="30dp">-->
+
+            <!--           <com.google.android.material.textfield.TextInputLayout-->
+            <!--               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:hint="@string/hint_id"-->
+            <!--               android:layout_row="0"-->
+            <!--               android:layout_column="0"-->
+            <!--               android:layout_columnSpan="2"-->
+            <!--               android:layout_columnWeight="2"-->
+            <!--               android:layout_gravity="fill_horizontal"-->
+            <!--               app:boxBackgroundColor="@color/white">-->
+
+            <!--               <com.google.android.material.textfield.TextInputEditText-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:id="@+id/etLecturaID"/>-->
+
+            <!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:id="@+id/txtProyecto"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:layout_row="0"-->
+            <!--               android:layout_column="2"-->
+            <!--               android:layout_columnSpan="1"-->
+            <!--               android:layout_columnWeight="1"-->
+            <!--               android:layout_gravity="fill"-->
+            <!--               android:text="@string/hint_proyecto"-->
+            <!--               android:gravity="center"/>-->
+
+            <!--           <com.google.android.material.textfield.TextInputLayout-->
+            <!--               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:hint="@string/hint_hora"-->
+            <!--               android:layout_row="1"-->
+            <!--               android:layout_column="0"-->
+            <!--               android:layout_columnSpan="2"-->
+            <!--               android:layout_columnWeight="2"-->
+            <!--               android:layout_gravity="fill_horizontal"-->
+            <!--               app:boxBackgroundColor="@color/white">-->
+
+            <!--               <com.google.android.material.textfield.TextInputEditText-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:id="@+id/etHora"/>-->
+
+            <!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:id="@+id/txtTurnoTrabajo"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="62dp"-->
+            <!--               android:layout_row="1"-->
+            <!--               android:layout_column="2"-->
+            <!--               android:layout_columnSpan="1"-->
+            <!--               android:layout_columnWeight="1"-->
+            <!--               android:layout_gravity="fill"-->
+            <!--               android:gravity="center"-->
+            <!--               android:text="@string/hint_turno_trabajo" />-->
+
+            <!--           <com.google.android.material.textfield.TextInputLayout-->
+            <!--               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:hint="@string/hint_fecha"-->
+            <!--               android:layout_row="2"-->
+            <!--               android:layout_column="0"-->
+            <!--               android:layout_columnSpan="2"-->
+            <!--               android:layout_columnWeight="2"-->
+            <!--               android:layout_gravity="fill_horizontal"-->
+            <!--               app:boxBackgroundColor="@color/white">-->
+
+            <!--               <com.google.android.material.textfield.TextInputEditText-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:id="@+id/etFecha"/>-->
+
+            <!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:id="@+id/txtSitioTrabajo"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:layout_row="2"-->
+            <!--               android:layout_column="2"-->
+            <!--               android:layout_columnSpan="1"-->
+            <!--               android:layout_columnWeight="1"-->
+            <!--               android:layout_gravity="fill"-->
+            <!--               android:text="@string/hint_sitio_trabajo"-->
+            <!--               android:gravity="center"/>-->
+
+            <!--           <com.google.android.material.textfield.TextInputLayout-->
+            <!--               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:hint="@string/hint_temperatura"-->
+            <!--               android:layout_row="3"-->
+            <!--               android:layout_column="0"-->
+            <!--               android:layout_columnSpan="2"-->
+            <!--               android:layout_columnWeight="2"-->
+            <!--               android:layout_gravity="fill_horizontal"-->
+            <!--               app:boxBackgroundColor="@color/white">-->
+
+            <!--               <com.google.android.material.textfield.TextInputEditText-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:id="@+id/etTemperatura"/>-->
+
+            <!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:id="@+id/txtTipo"-->
+            <!--               android:layout_width="120dp"-->
+            <!--               android:layout_height="46dp"-->
+            <!--               android:layout_row="3"-->
+            <!--               android:layout_column="2"-->
+            <!--               android:layout_columnSpan="1"-->
+            <!--               android:layout_columnWeight="1"-->
+            <!--               android:layout_gravity="fill"-->
+            <!--               android:gravity="center"-->
+            <!--               android:text="@string/hint_tipo" />-->
+
+            <!--           <com.google.android.material.textfield.TextInputLayout-->
+            <!--               style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:hint="@string/hint_observacion"-->
+            <!--               android:layout_row="4"-->
+            <!--               android:layout_column="0"-->
+            <!--               android:layout_columnSpan="2"-->
+            <!--               android:layout_columnWeight="2"-->
+            <!--               android:layout_gravity="fill_horizontal"-->
+            <!--               app:boxBackgroundColor="@color/white">-->
+
+            <!--               <com.google.android.material.textfield.TextInputEditText-->
+            <!--                   android:layout_width="match_parent"-->
+            <!--                   android:layout_height="wrap_content"-->
+            <!--                   android:id="@+id/etObservacion" />-->
+
+            <!--           </com.google.android.material.textfield.TextInputLayout>-->
+
+            <!--           <com.google.android.material.textview.MaterialTextView-->
+            <!--               android:id="@+id/txtFirmaEscaner"-->
+            <!--               android:layout_width="0dp"-->
+            <!--               android:layout_height="wrap_content"-->
+            <!--               android:layout_row="4"-->
+            <!--               android:layout_column="2"-->
+            <!--               android:layout_columnSpan="1"-->
+            <!--               android:layout_columnWeight="1"-->
+            <!--               android:layout_gravity="fill"-->
+            <!--               android:text="@string/hint_firma_escaner"-->
+            <!--               android:gravity="center"/>-->
+
+            <!--       </GridLayout>-->
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/llFormulario"
+                android:layout_alignStart="@+id/llFormulario"
+                android:layout_alignLeft="@+id/llFormulario"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnInformacion"
+                app:iconSize="50dp"
+                app:icon="@drawable/ic_baseline_info_24"
+                app:iconPadding="0dp"
+                app:iconGravity="textEnd"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/llFormulario"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnRegistros"
+                app:iconSize="50dp"
+                app:icon="@drawable/ic_baseline_assignment_24"
+                app:iconPadding="0dp"
+                app:iconGravity="textEnd"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/llFormulario"
+                android:layout_alignEnd="@+id/llFormulario"
+                android:layout_alignRight="@+id/llFormulario"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnGuardar"
+                app:iconSize="50dp"
+                app:icon="@drawable/ic_baseline_save_24"
+                app:iconPadding="0dp"
+                app:iconGravity="textEnd"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llCerrandoSesion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B0000000"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciando_sesion"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

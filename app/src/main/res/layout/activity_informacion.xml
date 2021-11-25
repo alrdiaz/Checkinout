@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.usuario.informacion.InformacionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/informacion_general"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/Informacion"/>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:id="@+id/Proyecto"-->
+<!--            android:layout_below="@+id/Informacion"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hint_proyecto"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:layout_marginTop="15dp">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="none"-->
+<!--                android:id="@+id/acProyecto"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:id="@+id/TurnoTrabajo"-->
+<!--            android:layout_below="@+id/Proyecto"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hint_turno_trabajo"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:layout_marginTop="15dp">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="none"-->
+<!--                android:id="@+id/acTurnoTrabajo"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:id="@+id/SitioTrabajo"-->
+<!--            android:layout_below="@+id/TurnoTrabajo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hint_sitio_trabajo"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:layout_marginTop="15dp">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="none"-->
+<!--                android:id="@+id/acSitioTrabajo"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:id="@+id/Tipo"-->
+<!--            android:layout_below="@+id/SitioTrabajo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hint_tipo"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:layout_marginTop="15dp">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="none"-->
+<!--                android:id="@+id/acTipo"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Proyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/hint_proyecto"
+            android:layout_below="@id/Informacion"/>
+
+        <Spinner
+            android:id="@+id/spProyecto"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/datos_muestra_spinner"
+            android:layout_marginHorizontal="30dp"
+            android:layout_below="@+id/Proyecto"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/TurnoTrabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/hint_turno_trabajo"
+            android:layout_below="@id/spProyecto"/>
+
+        <Spinner
+            android:id="@+id/spTurnoTrabajo"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/datos_muestra_spinner"
+            android:layout_marginHorizontal="30dp"
+            android:layout_below="@+id/TurnoTrabajo"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/SitioTrabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/hint_sitio_trabajo"
+            android:layout_below="@id/spTurnoTrabajo"/>
+
+        <Spinner
+            android:id="@+id/spSitioTrabajo"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/datos_muestra_spinner"
+            android:layout_marginHorizontal="30dp"
+            android:layout_below="@+id/SitioTrabajo"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/hint_tipo"
+            android:layout_below="@id/spSitioTrabajo"/>
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/datos_muestra_spinner"
+            android:layout_marginHorizontal="30dp"
+            android:layout_below="@+id/Tipo"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxBackgroundColor="@color/white"
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_firma_escaner"
+            android:layout_below="@+id/spTipo"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etFirmaEscaner" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btnGuardarInformacion"
+            android:layout_below="@+id/Nombre"
+            android:layout_alignRight="@+id/Nombre"
+            android:layout_alignEnd="@+id/Nombre"
+            android:layout_marginTop="30dp"
+            app:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="50dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

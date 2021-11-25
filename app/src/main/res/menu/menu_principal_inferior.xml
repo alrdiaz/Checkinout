@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemPrincipal"
+        android:title="@string/menu_principal"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+<!--    <item-->
+<!--        android:id="@+id/itemInformacion"-->
+<!--        android:title="Informacion"-->
+<!--        android:icon="@drawable/ic_baseline_location_on_24"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/itemTemperatura"-->
+<!--        android:title="Temperatura"-->
+<!--        android:icon="@drawable/ic_baseline_eco_24"/>-->
+
+    <item
+        android:id="@+id/itemRegistros"
+        android:title="@string/menu_registros"
+        android:icon="@drawable/ic_baseline_assignment_late_24"/>
+
+</menu>

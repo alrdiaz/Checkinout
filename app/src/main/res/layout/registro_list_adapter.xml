@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muestra_fecha"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muestra_hora"
+            android:textStyle="bold"
+            android:layout_below="@id/txtFecha"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.8">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_nombre"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Cedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cedula"
+            android:textStyle="bold"
+            android:layout_below="@+id/Nombre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Temperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_temperatura"
+            android:textStyle="bold"
+            android:layout_below="@+id/Cedula"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muestra_nombre"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/Temperatura"
+            android:layout_toEndOf="@+id/Temperatura"
+            android:layout_alignParentTop="true" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtCedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muestra_cedula"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@+id/txtNombre"
+            android:layout_toRightOf="@id/Temperatura"
+            android:layout_toEndOf="@+id/Temperatura"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/muestra_temperatura"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@+id/txtCedula"
+            android:layout_toRightOf="@+id/Temperatura"
+            android:layout_toEndOf="@+id/Temperatura"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

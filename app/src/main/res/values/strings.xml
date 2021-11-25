@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">CheckInOut</string>
+
+    <string name="menu_principal">Principal</string>
+    <string name="menu_registros">Registros</string>
+    <string name="menu_usuarios">Usuarios</string>
+    <string name="titulo_nombre">NOMBRE: </string>
+    <string name="titulo_cedula">CEDULA: </string>
+    <string name="titulo_temperatura">TEMPERATURA: </string>
+    <string name="muestra_nombre">NOMBRE PRUEBA</string>
+    <string name="muestra_cedula">XX.XXX.XXX.XXX</string>
+    <string name="muestra_temperatura">XX,XX</string>
+    <string name="muestra_fecha">XX-XX-XXXX</string>
+    <string name="muestra_hora">XX:XX:XX</string>
+
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_clave">Contraseña</string>
+    <string name="hint_nombre_persona">Nombre</string>
+    <string name="hint_id">ID</string>
+    <string name="hint_cedula">Cedula</string>
+    <string name="hint_hora">Hora</string>
+    <string name="hint_fecha">Fecha</string>
+    <string name="hint_temperatura">Temperatura</string>
+    <string name="hint_observacion">Observacion</string>
+    <string name="hint_opcional">(Opcional)</string>
+    <string name="hint_proyecto">Proyecto</string>
+    <string name="hint_turno_trabajo">Turno trabajo</string>
+    <string name="hint_sitio_trabajo">Sitio trabajo</string>
+    <string name="hint_tipo">Tipo</string>
+    <string name="hint_firma_escaner">Firma escaner</string>
+
+    <string name="boton_guardar">Guardar</string>
+    <string name="boton_registros">Registros</string>
+    <string name="boton_informacion">Informacion</string>
+    <string name="boton_sincronizar_firebase">Sincronizar Firebase</string>
+    <string name="boton_cerrar_sesion">Cerrar sesion</string>
+    <string name="boton_aceptar">Aceptar</string>
+    <string name="boton_cancelar">Cancelar</string>
+
+    <string name="informacion_general">informacion general</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="iniciando_sesion">Iniciando sesion…</string>
+    <string name="cerrando_sesion">Cerrando sesion…</string>
+    <string name="cargando_datos">Cargando datos…</string>
+
+    <string-array name="datos_muestra_spinner">
+        <item>uno</item>
+        <item>dos</item>
+        <item>tres</item>
+    </string-array>
+
+    <string-array name="datos_proyectos">
+        <item>Seleccione</item>
+        <item>Pch San Bartolomé</item>
+        <item>Pch Oibita</item>
+    </string-array>
+
+    <string-array name="datos_turno_trabajo">
+        <item>Seleccione</item>
+        <item>Diurno</item>
+        <item>Nocturno</item>
+        <item>Sabado</item>
+    </string-array>
+
+    <string-array name="datos_sitio_trabajo">
+        <item>Seleccione</item>
+        <item>Túnel</item>
+        <item>Casa de máquinas</item>
+        <item>Tuberia GRP</item>
+        <item>Captación</item>
+        <item>Lineas de Transmisión</item>
+        <item>Montajes</item>
+        <item>Pruebas</item>
+        <item>Instrumentación</item>
+        <item>Laboratorio</item>
+        <item>Equipos</item>
+        <item>Almacén</item>
+        <item>Gerencia</item>
+    </string-array>
+
+    <string-array name="datos_tipo">
+        <item>Operativo</item>
+        <item>Visitante</item>
+        <item>Proveedor</item>
+        <item>Conductor</item>
+    </string-array>
+
+    <string name="mantener_sesion">Mantener sesion abierta</string>
+    <string name="mostrar_clave">Mostrar contraseña</string>
+
+    <string name="preferencias_informacion_general">INFORMACION_GENERAL</string>
+    <string name="pref_proyecto">prefProyecto</string>
+    <string name="pref_sitio_trabajo">prefSitioTrabajo</string>
+    <string name="pref_turno_trabajo">prefTurnoTrabajo</string>
+    <string name="pref_tipo">prefTipo</string>
+    <string name="pref_firma_escaner">prefFirmaEscaner</string>
+
+    <string name="preferencias_cio">CIO</string>
+    <string name="pref_correo_sesion">correoSesion</string>
+    <string name="pref_clave_sesion">claveSesion</string>
+    <string name="pref_modo">modoCuenta</string>
+    <string name="pref_persistencia">persistencia</string>
+
+
+    <string name="valor_defecto">null</string>
+    <string name="modo_user">usuario</string>
+    <string name="modo_admin">admin</string>
+    <string name="desactivado">desactivado</string>
+    <string name="activado">activado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
